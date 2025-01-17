@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="telegram:title" content="Clothing Store | Trendy Apparel for Everyone">
+    <meta name="telegram:description" content="Discover the latest trends in clothing and accessories at Clothing Store.">
+    <meta name="telegram:image" content="https://www.clothingStore.com/images/telegram-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="instagram:creator" content="@clothingStore">
+    <meta property="og:image:alt" content="Trendy Clothing Store Banner">
+    <meta property="og:title" content="Clothing Store | Trendy Apparel for Everyone">
+    <meta property="og:description" content="Discover the latest trends in clothing and accessories at Clothing Store. Shop quality apparel at affordable prices for men, women, and kids.">
+    <meta property="og:url" content="https://www.clothingStore.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.clothingStore.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Clothing Store">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clothing Store | Trendy Apparel for Everyone">
+    <meta name="twitter:description" content="Discover the latest trends in clothing and accessories at Clothing Store. Shop quality apparel at affordable prices for men, women, and kids.">
+    <meta name="twitter:image" content="https://www.clothingStore.com/images/twitter-image.jpg">
+    <meta name="twitter:site" content="@clothingStore">
+    <meta name="twitter:creator" content="@clothingStore">
+
+    <title>WomenShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <nav class="navbar p-1 bg-light fixed-top w-100 ">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <div>
+            <a href="index.html"><img class="rounded-circle mx-5 border border-black" src="https://static.vecteezy.com/system/resources/thumbnails/008/976/210/small_2x/clothing-store-logo-design-with-hanger-illustration-vector.jpg" width="90" alt="logo"></a>
+          </div>
+          <div>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 gap-2">
+            <li><a href="index.html" class="nav-link px-2 mx-4 link-primary focus-ring focus-ring-primary rounded-3">Home</a></li>
+            <li class="position-relative mx-4">
+              <a href="womenShop.html" 
+                 class="dropdown text-end nav-link px-2 link-primary focus-ring focus-ring-primary rounded-3 d-block text-decoration-none dropdown-toggle" 
+                 data-bs-toggle="dropdown" 
+                 aria-expanded="false">
+                Women
+              </a>
+              <ul class="dropdown-menu position-absolute text-small">
+                <li><a class="dropdown-item" href="#top-blouses">Top & Blouses</a></li>
+                <li><a class="dropdown-item" href="#jeans">Jeans</a></li>
+                <li><a class="dropdown-item" href="#dress">Dress</a></li>
+                <li><a class="dropdown-item" href="#shoes">Shoes</a></li>
+              </ul>
+            </li>
+            <li><a href="menShop.html" class="nav-link mx-4 px-2 link-primary focus-ring focus-ring-primary rounded-3">Men</a></li>
+            <li><a href="kidShop.html" class="nav-link px-2 mx-4 link-primary focus-ring focus-ring-primary rounded-3">Kid</a></li>
+  
+          </ul>
+         </div>
+  
+          <form class="col-12 col-lg-auto mx-4 mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="dropdown text-end">
+            <a href="#" class="mx-4 d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="#">Login/Sign-up</a></li>
+              <li><a class="dropdown-item" href="#">Account Details</a></li>
+              <li><a class="dropdown-item" href="#">Order History</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+          <div class="rounded-circle border border-black mx-4 p-1 bg-warning">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
+    <main>
+        <section style="margin-top: 9rem;">
+          <h2  class="mt-5 fs-1 fw-bold text-center"><em>WELCOM TO WOMEN SHOP</em></h2>
+          <div class="hero-container shadow mb-5 bg-body-tertiary rounded">
+            <div  class="row row-cols-3 justify-content-center bg-white">
+              <div class="col">
+                <img  src="https://lewkin.com/cdn/shop/files/003_13_71765f5d-19d5-4b5e-a594-1bbb8a5b4511.jpg?pad_color=fff&v=1732586944&width=940" class=" img-fluid" style="height: 500px; object-fit: cover;" alt="homeHero">
+              </div>
+              <div class="col position-relative">
+                <div class="position-absolute">
+                  <img src="https://lewkin.com/cdn/shop/files/001_1_c535ebc5-9d80-4037-bc5e-2effb3e120bd.jpg?pad_color=fff&v=1732586925&width=940"  class=" img-fluid" style="height: 500px; object-fit: cover;"  alt="homeHero">
+                </div>
+                <div class="position-absolute start-50 bottom-0 translate-middle">
+                  <p><a href="#top-blouses" class="btn btn-primary p-2 px-4">SHOP NOW</a></p>
+                </div>
+              </div>
+              <div class="col">
+                <img src="https://lewkin.com/cdn/shop/files/002_f0161ae1-9bdc-4d22-9e64-17c601272a50.jpg?pad_color=fff&v=1735264644&width=940"  class="img-fluid" style="height: 500px; object-fit: cover;"  alt="homeHero">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="top-blouses">
+            <h2  class="my-5 fs-1 fw-bold text-center"><em>WOMEN TOP & BLOUSES</em></h2>
+            <div class="dress-container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-6 gap-2 mx-1 justify-content-center">
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_beige_b5adcb4a-ec0c-4e99-9b60-2d149ec3062d.jpg?pad_color=fff&v=1734483992&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Ribbed Off-Shoulder Long Sleeve Top</small>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_White_54e4f6d9-8fac-4f18-a363-de05390d2002.jpg?pad_color=fff&v=1734068432&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Basic Cotton Button-Up Top</small>
+                    <br>
+                    <small class="card-price text-warning">$18</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_Light_20beige_2dcd7cfc-969d-43ef-9201-adc9681d8e59.jpg?pad_color=fff&v=1734067708&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Round Neck Layered Blouse</small>
+                    <br>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_Light_20gray_aa28c6f1-98c5-42b8-9702-f4b4c463abe4.jpg?pad_color=fff&v=1733799570&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Buttoned Slim-Fit Shirt</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_White_56f7e5be-1210-439f-8ee1-04a8a80a5935.jpg?pad_color=fff&v=1733105338&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Elegance One Shoulder Blouse</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="jeans">
+            <h2  class="my-5 fs-1 fw-bold text-center"><em>WOMEN JEANS</em></h2>
+            <div class="dress-container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-6 gap-2 mx-1 justify-content-center">
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://cdn.shopify.com/s/files/1/0600/4493/5332/files/002_dark_20blue_90a158ad-3e37-47a0-9a55-071aa6b79d3c_636x.jpg?v=1736494068" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Wide-Leg Jeans</small>
+                    <br>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/002_07e8578b-be7b-48d2-927f-b1423fea8ea4.jpg?pad_color=fff&v=1736833448&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Wide-Leg Jeans</small>
+                    <br>
+                    <small class="card-price text-warning">$18</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_blue_7012cf92-5d90-4378-a576-1aa2bc15ced3.jpg?pad_color=fff&v=1736401923&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>June Washed Baggy Jeans</small>
+                    <br>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_Black_0fee7ad2-d468-45e3-b5b3-626294176339.jpg?pad_color=fff&v=1736233074&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Cargo Denim Baggy Pants</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_dark_20blue_e8f5819d-a273-417e-a668-e4653bd61b2a.jpg?pad_color=fff&v=1735799270&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Kathy Slim-Fit Flared Jeans</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="dress">
+            <h2  class="my-5 fs-1 fw-bold text-center"><em>WOMEN DRESS</em></h2>
+            <div class="dress-container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-6 gap-2 mx-1 justify-content-center">
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://cdn-images.kooding.com/productListingImage/580237-2/dcb1bbc5e8a5ccf2faa0f5c748b1d7751d6e122a.gif" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Ellipse Color Block Tweed Mini Dress</small>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://cdn-images.kooding.com/productDetailImage/561740-2/c86bde1836fcb24d51ace82c840d61b4880f852d.jpeg" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Flower Blue Dress</small>
+                    <br>
+                    <small class="card-price text-warning">$18</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://cdn-images.kooding.com/productDetailImage/397587-2/ddc39d6723350128d808641a899254bfb44f33ce.jpg" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Flower White Dress</small>
+                    <br>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://cdn-images.kooding.com/productDetailImage/478522-2/93df9815cfaab6de5bb69df5cb7649d6d7e24550.jpg" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Flower Black Dress</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://cdn-images.kooding.com/productDetailImage/450044-2/da3667e3537b1f3ffd1192ba7da6aff0e104cc58.jpg" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Flower White Dress</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="shoes">
+            <h2  class="my-5 fs-1 fw-bold text-center"><em>WOMEN SHOES</em></h2>
+            <div class="dress-container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-6 gap-2 mx-1 justify-content-center">
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_lightbeige.jpg?pad_color=fff&v=1736402180&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Faux-Leather Knee-High Boots</small>
+                    <br>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_Red_23d6f6f2-cdd9-4ec1-9339-0c3fc1eca72d.jpg?pad_color=fff&v=1735001067&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Cow Suede Leather Sneakers</small>
+                    <br>
+                    <small class="card-price text-warning">$18</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_Yellow_41eaaa79-b5fc-474e-ada5-21a2ff2f81cb.jpg?pad_color=fff&v=1710463823&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Square Open Toe Pumps</small>
+                    <br>
+                    <small class="card-price text-warning">$16</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_White_bf1416fe-072b-4ce0-a93c-fe2ad8d45446.jpg?pad_color=fff&v=1718585423&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Platform Thong Slides</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-0 position-relative" style="width: 15rem;">
+                  <div class="position-absolute top-0 end-0 p-1 m-1 rounded-circle bg-light border border-black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                        </svg>
+                  </div>
+                  <img src="https://lewkin.com/cdn/shop/files/001_Black_056f4511-01a5-4bc0-93b1-d5ad8e445deb.jpg?pad_color=fff&v=1720156711&width=940" class="card-img-top" style="height:250px; object-fit: cover;" alt="cloth">
+                  <div class="card-body p-0 m-0">
+                    <small>Fisherman Sandals</small>
+                    <br>
+                    <small class="card-price text-warning">$17</small>
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 p-0">
+                     <a href="#" class="btn btn-primary">Add to card</a>
+                     <a href="#" class="btn btn-warning ">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="col-sm-1 col-lg-3 mb-3 text-center text-lg-start">
+            <img class="rounded-circle mx-5 border border-black" src="https://static.vecteezy.com/system/resources/thumbnails/008/976/210/small_2x/clothing-store-logo-design-with-hanger-illustration-vector.jpg" width="90" alt="logo">
+            <h2>Clothing Store</h2>
+          </div>
+          <div class="col-sm-1 col-lg-3 mb-3">
+            <h3>Links</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="womenShop.html" target="_self" >Women</a></li>
+              <li class="mb-2"><a href="menShop.html" target="_self" >Men</a></li>
+              <li class="mb-2"><a href="kidShop.html" target="_self">Kid</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-1 col-lg-3 mb-3">
+            <h3>CONTACTS</h3>
+            <ul class="list-unstyled">
+              <li>Location: Phnom Penh, Cambodia</li>
+              <li>Email: <a href="mailto:clothingStore@gmail.com">clothingStore@gmail.com</a></li>
+              <li>Facebook: Clothing Store</li>
+              <li>Instagram: Clothing Store</li>
+              <li>Twitter: <a href="https://twitter.com/clothingStore" target="_blank" rel="noopener noreferrer">Clothing Store</a></li>
+              <li>Phone: <a href="tel:+855123456789">+855 123 456 789</a></li>
+            </ul>
+            <div class="d-flex">
+              <a href="#" class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+              <a href="#" class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </a>
+              <a href="#" class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+              </a>
+              <a href="#" class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
